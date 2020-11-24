@@ -15,7 +15,7 @@ const App = () => {
 
     return (
     <div className="todo-app">
-        <AppHeader/>
+        <AppHeader toDo={1} done={1}/>
         <div className="top-panel d-flex">
             <SearchPanel/>
             <ItemStatusfilter/>

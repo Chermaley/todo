@@ -1,7 +1,13 @@
-/* eslint-disable react/prop-types */
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import './todo-list-item.scss';
 class TodoListItem extends Component {
+    
+    propTypes = {
+        label: PropTypes.string.isRequired,
+        important: PropTypes.bool.isRequired
+    };
+
     render() {
         const {label, important = false} = this.props;
 

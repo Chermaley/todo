@@ -1,7 +1,7 @@
 
-/* eslint-disable react/prop-types */
 import React from 'react';
 import TodoListItem from '../todo-list-item';
+import PropTypes from 'prop-types';
 import './todo-list.scss';
 const TodoList = ({todos}) => {
 
@@ -20,6 +20,10 @@ const TodoList = ({todos}) => {
            {elements}
         </ul>
     );
+};
+
+TodoList.propTypes = {
+    todos: PropTypes.array.isRequired
 };
 
 export default TodoList;
