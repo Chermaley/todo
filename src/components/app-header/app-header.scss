@@ -1,0 +1,12 @@
+.app-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    &-title{
+        font-size: 4rem;
+    }
+    &-counter{
+        font-size: 1.5rem;
+    }
+}
