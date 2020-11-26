@@ -1,12 +1,20 @@
 .app-header{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     user-select: none;
     &-title{
         font-size: 4rem;
+        margin-left: 40px;
+        font-style: oblique;
     }
     &-counter{
         font-size: 1.5rem;
+    }
+    img{
+        left: -25px;
+        position: absolute;
+        width: 100px;
     }
 }
